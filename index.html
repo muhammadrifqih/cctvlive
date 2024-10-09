@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAJU TERUS CCTV</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.10.2/video-js.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.10.2/video.min.js"></script>
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-white shadow p-5">
+      <h1 class="text-3xl font-bold text-center">CCTV DESA MAJU TERUS</h1>
+    </header>
+
+    <nav class="bg-blue-600 text-white p-4">
+      <ul class="flex justify-around">
+        <li><a href="#" class="hover:underline">Beranda</a></li>
+        <li><a href="#" class="hover:underline">CCTV</a></li>
+        <li><a href="#" class="hover:underline">Kontak</a></li>
+        <li><a href="#" class="hover:underline">CCTV Map</a></li>
+      </ul>
+    </nav>
+
+    <div
+      class="container mx-auto p-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+    >
+      <div class="bg-white p-4 rounded shadow">
+        <h2 class="font-bold text-blue-600">SIMP 4 PASAR BATUAH</h2>
+        <div class="flex justify-center items-center h-48 bg-gray-200">
+          <video
+            id="video-simp4-batuah"
+            class="video-js w-full h-full"
+            controls
+            preload="auto"
+            data-setup="{}"
+            poster="/api/placeholder/400/400"
+          >
+            <source
+              src="https://stream3.banjarkab.go.id/3S1McVqImbNEkIS52MzxpDaeuzFs90/hls/VKfQs67iU7/Simp4PasarBatuah/s.m3u8"
+              type="application/x-mpegURL"
+            />
+            <p class="vjs-no-js">
+              Untuk melihat video ini, aktifkan JavaScript atau gunakan browser
+              yang mendukung HTML5 Video.
+            </p>
+          </video>
+        </div>
+      </div>
+
+      <div class="bg-white p-4 rounded shadow">
+        <h2 class="font-bold text-blue-600">JI A. YANI SIMP. 4</h2>
+        <div class="flex justify-center items-center h-48 bg-gray-200">
+          <video
+            id="video-ji-a-yani"
+            class="video-js w-full h-full"
+            controls
+            preload="auto"
+            data-setup="{}"
+            poster="/api/placeholder/400/400"
+          >
+            <source
+              src="https://stream3.banjarkab.go.id/3S1McVqImbNEkIS52MzxpDaeuzFs90/hls/VKfQs67iU7/Simpang4/s.m3u8"
+              type="application/x-mpegURL"
+            />
+            <p class="vjs-no-js">
+              Untuk melihat video ini, aktifkan JavaScript atau gunakan browser
+              yang mendukung HTML5 Video.
+            </p>
+          </video>
+        </div>
+      </div>
+
+      <div class="bg-white p-4 rounded shadow">
+        <h2 class="font-bold text-blue-600">TAMAN CBS</h2>
+        <div class="flex justify-center items-center h-48 bg-gray-200">
+          <video
+            id="video-taman-cbs"
+            class="video-js w-full h-full"
+            controls
+            preload="auto"
+            data-setup="{}"
+            poster="/api/placeholder/400/400"
+          >
+            <source
+              src="https://stream3.banjarkab.go.id/3S1McVqImbNEkIS52MzxpDaeuzFs90/hls/VKfQs67iU7/TamanCBS/s.m3u8"
+              type="application/x-mpegURL"
+            />
+            <p class="vjs-no-js">
+              Untuk melihat video ini, aktifkan JavaScript atau gunakan browser
+              yang mendukung HTML5 Video.
+            </p>
+          </video>
+        </div>
+      </div>
+
+      <div class="bg-white p-4 rounded shadow">
+        <h2 class="font-bold text-blue-600">JI A. YANI (DARUSSALAM)</h2>
+        <div class="flex justify-center items-center h-48 bg-gray-200">
+          <video
+            id="video-ji-a-yani-darussalam"
+            class="video-js w-full h-full"
+            controls
+            preload="auto"
+            data-setup="{}"
+            poster="/api/placeholder/400/400"
+          >
+            <source
+              src="https://stream3.banjarkab.go.id/3S1McVqImbNEkIS52MzxpDaeuzFs90/hls/VKfQs67iU7/JIAYANI_DARUSSALAM/s.m3u8"
+              type="application/x-mpegURL"
+            />
+            <p class="vjs-no-js">
+              Untuk melihat video ini, aktifkan JavaScript atau gunakan browser
+              yang mendukung HTML5 Video.
+            </p>
+          </video>
+        </div>
+      </div>
+
+      <div class="bg-white p-4 rounded shadow">
+        <h2 class="font-bold text-blue-600">SIMP 4 SEKUMPUL</h2>
+        <div class="flex justify-center items-center h-48 bg-gray-200">
+          <video
+            id="video-simp4-sekumpul"
+            class="video-js w-full h-full"
+            controls
+            preload="auto"
+            data-setup="{}"
+            poster="/api/placeholder/400/400"
+          >
+            <source
+              src="https://stream3.banjarkab.go.id/3S1McVqImbNEkIS52MzxpDaeuzFs90/hls/VKfQs67iU7/Simpang4Sekumpul/s.m3u8"
+              type="application/x-mpegURL"
+            />
+            <p class="vjs-no-js">
+              Untuk melihat video ini, aktifkan JavaScript atau gunakan browser
+              yang mendukung HTML5 Video.
+            </p>
+          </video>
+        </div>
+      </div>
+
+      <div class="bg-white p-4 rounded shadow">
+        <h2 class="font-bold text-blue-600">SIMP 3 SEKUMPUL UJUNG</h2>
+        <div class="flex justify-center items-center h-48 bg-gray-200">
+          <video
+            id="video-simp3-sekumpul-ujung"
+            class="video-js w-full h-full"
+            controls
+            preload="auto"
+            data-setup="{}"
+            poster="/api/placeholder/400/400"
+          >
+            <source
+              src="https://stream3.banjarkab.go.id/3S1McVqImbNEkIS52MzxpDaeuzFs90/hls/VKfQs67iU7/Simpang3SekumpulUjung/s.m3u8"
+              type="application/x-mpegURL"
+            />
+            <p class="vjs-no-js">
+              Untuk melihat video ini, aktifkan JavaScript atau gunakan browser
+              yang mendukung HTML5 Video.
+            </p>
+          </video>
+        </div>
+      </div>
+
+      <div class="bg-white p-4 rounded shadow">
+        <h2 class="font-bold text-blue-600">SIMP 4 PENDIDIKAN</h2>
+        <div class="flex justify-center items-center h-48 bg-gray-200">
+          <video
+            id="video-simp4-pendidikan"
+            class="video-js w-full h-full"
+            controls
+            preload="auto"
+            data-setup="{}"
+            poster="/api/placeholder/400/400"
+          >
+            <source
+              src="https://stream3.banjarkab.go.id/3S1McVqImbNEkIS52MzxpDaeuzFs90/hls/VKfQs67iU7/Simpang4Pendidikan/s.m3u8"
+              type="application/x-mpegURL"
+            />
+            <p class="vjs-no-js">
+              Untuk melihat video ini, aktifkan JavaScript atau gunakan browser
+              yang mendukung HTML5 Video.
+            </p>
+          </video>
+        </div>
+      </div>
+
+      <div class="bg-white p-4 rounded shadow">
+        <h2 class="font-bold text-blue-600">IRIGASI SEKUMPUL 1</h2>
+        <div class="flex justify-center items-center h-48 bg-gray-200">
+          <video
+            id="video-irigasi-sekumpul1"
+            class="video-js w-full h-full"
+            controls
+            preload="auto"
+            data-setup="{}"
+            poster="/api/placeholder/400/400"
+          >
+            <source
+              src="https://stream3.banjarkab.go.id/3S1McVqImbNEkIS52MzxpDaeuzFs90/hls/VKfQs67iU7/IrigasiSekumpul1/s.m3u8"
+              type="application/x-mpegURL"
+            />
+            <p class="vjs-no-js">
+              Untuk melihat video ini, aktifkan JavaScript atau gunakan browser
+              yang mendukung HTML5 Video.
+            </p>
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <!-- Map Container (pindahkan ke bawah) -->
+    <div class="container mx-auto p-5">
+      <div id="map" class="h-96 rounded-lg"></div>
+    </div>
+
+    <!-- JavaScript for Map -->
+    <script>
+      var map = L.map("map").setView([-3.318, 114.5908], 13);
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution:
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      }).addTo(map);
+
+      var cameras = [
+        { name: "SIMP 4 PASAR BATUAH", lat: -3.3175, lng: 114.5943 }, // Ganti dengan koordinat yang tepat
+        { name: "JI A. YANI SIMP. 4", lat: -3.3165, lng: 114.5953 }, // Ganti dengan koordinat yang tepat
+        { name: "TAMAN CBS", lat: -3.3185, lng: 114.5933 }, // Ganti dengan koordinat yang tepat
+        { name: "JI A. YANI (DARUSSALAM)", lat: -3.3195, lng: 114.5923 }, // Ganti dengan koordinat yang tepat
+        { name: "SIMP 4 SEKUMPUL", lat: -3.32, lng: 114.591 }, // Ganti dengan koordinat yang tepat
+        { name: "SIMP 3 SEKUMPUL UJUNG", lat: -3.321, lng: 114.5905 }, // Ganti dengan koordinat yang tepat
+        { name: "SIMP 4 PENDIDIKAN", lat: -3.322, lng: 114.589 }, // Ganti dengan koordinat yang tepat
+        { name: "IRIGASI SEKUMPUL 1", lat: -3.323, lng: 114.5885 }, // Ganti dengan koordinat yang tepat
+      ];
+
+      cameras.forEach(function (camera) {
+        L.marker([camera.lat, camera.lng]).addTo(map).bindPopup(camera.name);
+      });
+
+      var player = videojs("my-video");
+    </script>
+  </body>
+</html>
